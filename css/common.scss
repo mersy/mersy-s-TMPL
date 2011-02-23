@@ -13,38 +13,39 @@ title : common.css
   font-variant: normal;
   text-decoration: none;
 }
-
 hr {
-  border: none;
-  border-top: 1px dashed #ccc;
-  margin: 10px 0;
+  //display: none;
+	border:none;
+	border-top:1px dashed #ccc;
+	margin:10px 0;
 }
 
 body {
-  color: #333;
-  padding: 0;
-  margin: 0;
-  font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
-  font-size: 13px;
+	color:#333;
+  padding:0;
+  margin:0;
+  font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+  font-size:13px;
 }
 
 /* -- block element */
+
 div, h1, h2, h3, h4, h5, h6, p, blockquote, pre, address {
   display: block;
   margin: 0;
   padding: 0;
-  font-style: normal;
+	font-style:normal;
 }
 
 p {
-  margin-bottom: 1.5em;
-  padding: 0;
-  line-height: 1.4;
-  text-align: left;
+  margin-bottom:1.5em;
+  padding:0;
+  line-height:1.4;
+  text-align:left;
 }
 
 blockquote {
-  margin: 0 0 1em 2em;
+  margin:0 0 1em 2em;
   padding: 0;
 }
 
@@ -86,10 +87,10 @@ del ins {
   text-decoration: line-through;
 }
 
-ins h1, ins h2, ins h3, ins h4, ins h5, ins h6, ins div, ins p, ins pre, ins address, ins blockquote, ins dl, ins form, ins fieldset, ins table {
+ins h1, ins h2, ins h3, ins h4, ins h5, ins h6, ins div, ins p, ins pre, ins address, ins blockquote, ins dl, ins form, ins fieldset, ins table{
   margin: 0;
   padding: 0;
-}
+} 
 
 h1 ins, h2 ins, h3 ins, h4 ins, h5 ins, h6 ins, p ins, pre ins, address ins, li ins, dt ins, dd ins {
   display: inline;
@@ -104,6 +105,7 @@ pre ins, code ins, samp ins, var ins, kbd ins {
   padding: 0;
   text-decoration: underline;
 }
+
 
 /* -- inline element */
 a, abbr, acronym, bdo, big, cite, code, dfn, em, img, kbd, object, q, ruby, samp, small, span, strong, sub, sup, var {
@@ -129,7 +131,7 @@ a {
 img {
   margin: 0;
   padding: 0;
-  vertical-align: bottom;
+	vertical-align:bottom;
 }
 
 a img {
@@ -159,7 +161,7 @@ em {
 }
 
 code, pre code {
-  font-family: "Courier New", "Osaka－等幅", "ＭＳ Ｐゴシック", monospace;
+   font-family: "Courier New", "Osaka－等幅", "ＭＳ Ｐゴシック", monospace;
 }
 
 button {
@@ -170,7 +172,7 @@ button {
   color: #333;
   font-family: monospace;
   font-size: 85%;
-  cursor: pointer;
+  cursor:pointer;
 }
 
 button:active {
@@ -190,15 +192,15 @@ dl {
 
 li {
   display: list-item;
-  margin: 0;
+  margin:0;
 }
 
 ul {
-  list-style-position: outside;
+	list-style-position:outside;
 }
 
 ol {
-  list-style-position: outside;
+	list-style-position:outside;
 }
 
 ul ul,
@@ -225,7 +227,7 @@ dt {
 
 dd {
   margin: 0;
-  padding: 0;
+  padding:0;
 }
 
 dd p {
@@ -233,6 +235,7 @@ dd p {
 }
 
 /* -- form */
+
 form {
   display: block;
   line-height: 1;
@@ -265,10 +268,12 @@ label {
   vertical-align: baseline;
   margin: 0;
   padding: 0;
-  cursor: pointer;
+	cursor: pointer; 
 }
+  
 
 /* -- table */
+
 table, th, td {
   border-style: solid;
   border-collapse: collapse;
@@ -291,7 +296,7 @@ tr {
 }
 
 th, td {
-  padding: 0;
+  padding:0;
   border-width: 0 1px 1px 0;
   border-color: black;
   border-style: dotted;

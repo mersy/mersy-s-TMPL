@@ -1,9 +1,3 @@
 @charset "utf-8";
-/* おおよそ共通 */
 @import "common.css";
-@import "fonts.css";
-@import "module.css";
-
-
-/* main.css */
 @import "main.css";

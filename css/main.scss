@@ -1,0 +1,162 @@
+@charset "utf-8";
+/* ********************************************************************-
+
+title : main.css
+
+- ******************************************************************** */
+// mixins
+@mixin min-height($px) {
+  min-height: $px;
+  height: auto!important;
+  height: $px;
+}
+
+@mixin inline-block {
+  display: inline-block;
+  #display: inline;
+  #zoom: 1;
+}
+
+@mixin position_Pattern($min, $padding, $top, $left, $width, $margin) {
+  li {
+    position: relative;
+    @include min-height($min);
+    padding: $padding;
+    
+    img {
+      position: absolute;
+      top: $top;
+      left: $left;
+      width: $width;
+    }
+    p {
+      margin: $margin;
+    }
+  }
+}
+
+@mixin radius($px) {
+  -moz-border-radius: $px;
+  -webkit-border-radius: $px;
+  -border-radius: $px;
+}
+
+@mixin gradient($color1, $position1, $color2, $position2, $color3, $position3) {
+  background: -moz-linear-gradient(top, $color1 $position1, $color2, $position2, $color3 $position3);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop($position1, $color1), color-stop($position2, $color2), color-stop($position3, $color3));
+  background: linear-gradient(top, $color1 $position1, $color2, $position2, $color3 $position3);
+  background-color: #777;
+}
+/*======================================================================
+
+layout
+
+====================================================================== */
+body{
+	text-align:center;
+}
+
+div#container{
+	width:960px;
+	margin:0 auto;
+	text-align:left;
+}
+
+div#Area01{
+	float:left;
+	width:700px;
+}
+
+div#Area02{
+	float:right;
+	width:220px;
+}
+
+div#Area03{
+	clear:right;
+	float:right;
+	width:220px;
+}
+
+div#footer{
+	clear:both;
+}
+
+/*======================================================================
+
+common
+
+====================================================================== */
+.pkg{//@extend .pkg;
+  zoom:1;/*for IE 5.5-7*/
+}
+.pkg:after{/*for modern browser*/
+	content:".";
+	display:block;
+	visibility:hidden;
+	height:0.1px;
+	font-size:0.1em;
+	line-height:0;
+	clear:both;
+}
+/*
+heading
+----------------------------------------------------------------------*/
+h1,h2,h3,h4,h5,h6 {
+}
+/*
+ Link Color
+----------------------------------------------------------------------*/
+a:link{
+	text-decoration:none;
+}
+a:visited{
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:underline;
+}
+a:active {
+	color:#666;
+}
+
+/*
+入力フォームの必須項目
+----------------------------------------------------------------------*/
+input,textarea {
+	padding: 0;
+}
+
+input.require,
+textarea.require {
+	background: #eddedd;
+}
+
+input:hover,
+textarea:hover {/* IE以外 */
+	background: #eeeeee;
+}
+
+/*======================================================================
+
+header
+
+====================================================================== */
+
+/*======================================================================
+
+footer
+
+====================================================================== */
+
+/*======================================================================
+
+subArea
+
+====================================================================== */
+
+/*======================================================================
+
+mainArea
+
+====================================================================== */
